@@ -20,12 +20,11 @@ public class MySpringBootApplication {
 
         Object applicationProperties = context.getBean(ApplicationProperties.class);
         System.out.printf("应用程序配置属性:%n{%s}%n", applicationProperties);
-/*
+
         //获取bean，redisTemplate
         Object redisTemplate = context.getBean("redisTemplate");
         System.out.printf("redisTemplate: %s%n", redisTemplate);
 
-*/
         //获取bean，user
         Object user = context.getBean("user");
         System.out.printf("User is : %n%s%n", user);
