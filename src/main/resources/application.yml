@@ -1,0 +1,8 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: my-spring-boot
+    title: "我的springboot应用程序"
+    version: 1.0.0
+    author: "dxq"
