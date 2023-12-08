@@ -21,6 +21,7 @@ public class ClassCondition implements Condition {
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         boolean flag = true;
+
         try {
             String conditionalOnClassName = ConditionalOnClass.class.getName();
             Map<String, Object> attributes = Objects.requireNonNull(metadata.getAnnotationAttributes(conditionalOnClassName));
