@@ -18,7 +18,7 @@ public class MySpringBootApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(MySpringBootApplication.class, args);
 
-        Object applicationProperties = context.getBean(ApplicationProperties.class);
+        ApplicationProperties applicationProperties = context.getBean(ApplicationProperties.class);
         System.out.printf("应用程序配置属性:%n{%s}%n", applicationProperties);
 
         //获取bean，redisTemplate
